@@ -1,0 +1,1 @@
+Series Length: 4, Starting Number Before Printed Number: 4, Output:  [5, 8, 13, 21]
