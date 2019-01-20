@@ -21,6 +21,7 @@ public class Assignment1Main {
         FibonacciSeries fibonacciSeries = new FibonacciSeries();
         List<Integer> series = fibonacciSeries.getSeries(seriesLength, startingNumber);
         Assignment1Main.writeToFile(seriesLength, startingNumber, series);
+        System.out.println("Please open output.txt file to see the output");
     }
 
     /**
@@ -33,6 +34,7 @@ public class Assignment1Main {
     public static void writeToFile(Integer seriesLength, Integer startingNumber, List<Integer> output) throws IOException {
         String contentToWrite = "Series Length: " + seriesLength + ", Starting Number Before Printed Number: " + startingNumber + ", Output:  " + output;
         BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt"));
+        System.out.println("------Please wait writing into a file.-------");
         writer.write(contentToWrite);
         writer.close();
     }
